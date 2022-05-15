@@ -1,17 +1,16 @@
 import { defineHook } from "@directus/extensions-sdk";
 
 export default defineHook(async ({ action }, { services, getSchema }) => {
-  const { CollectionsService } = services;
-  const schema = await getSchema();
-
-  action("server.start", (_evt, { database }) => {
-    const collection = "wellenplan";
+  action("server.start", async (_evt, { database }) => {
+    const { CollectionsService } = services;
+    const schema = await getSchema();
 
     const service = new CollectionsService({
       knex: database,
       schema,
     });
 
+    const collection = "wellenplan";
     const data = {
       collection: collection,
       note: "Wellenplan",
