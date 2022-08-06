@@ -21,7 +21,7 @@
     "build": "directus-extension build"
   },
   "devDependencies": {
-    "@directus/extensions-sdk": "9.14.4",
+    "@directus/extensions-sdk": "9.15.1",
     "@types/jest": "^28.1.6",
     "@types/node": "^18.6.4",
     "ts-jest": "^28.0.7",
