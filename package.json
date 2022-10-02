@@ -24,7 +24,7 @@
     "@directus/extensions-sdk": "9.16.1",
     "@types/jest": "^29.0.3",
     "@types/node": "^18.7.23",
-    "ts-jest": "^29.0.1",
+    "ts-jest": "^29.0.3",
     "typescript": "^4.8.3"
   }
 }
